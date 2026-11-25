@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Random Colors</title>
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Colors">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Setup screen -->
+  <main id="setup" class="screen">
+    <h1>Random Colors</h1>
+
+    <section class="field">
+      <div class="label-row">
+        <label for="count">Number of colors</label>
+        <output id="countOut"></output>
+      </div>
+      <input id="count" type="range" min="2" max="12" step="1">
+      <div id="swatches" class="swatches" aria-label="Colors in use"></div>
+    </section>
+
+    <section class="field">
+      <div class="label-row">
+        <label for="interval">Interval</label>
+        <output id="intervalOut"></output>
+      </div>
+      <input id="interval" type="range" min="0" max="0" step="1">
+      <div class="presets" id="presets"></div>
+    </section>
+
+    <button id="start" class="primary">Start</button>
+    <p class="hint">Tap the screen while it is running to pause.</p>
+  </main>
+
+  <!-- Full-screen color display -->
+  <div id="display" class="screen hidden" aria-live="off">
+    <div id="pause" class="pause hidden">
+      <div class="pause-panel">
+        <p id="pauseInfo"></p>
+        <button id="resume" class="primary">Resume</button>
+        <button id="quit" class="secondary">Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
