@@ -1,5 +1,5 @@
 // Bump this version whenever you change any file, so the iPad picks up the update.
-const CACHE = 'random-colors-v1';
+const CACHE = 'random-colors-v2';
 const ASSETS = [
   './',
   'index.html',

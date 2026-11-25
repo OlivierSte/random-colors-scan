@@ -3,9 +3,9 @@
 // Ordered from most to least distinct: choosing N uses the first N.
 const PALETTE = [
   { name: 'Red',    hex: '#FF0000' },
+  { name: 'Yellow', hex: '#FFE600' },
   { name: 'Green',  hex: '#00C800' },
   { name: 'Blue',   hex: '#0050FF' },
-  { name: 'Yellow', hex: '#FFE600' },
   { name: 'White',  hex: '#FFFFFF' },
   { name: 'Black',  hex: '#000000' },
   { name: 'Orange', hex: '#FF8000' },
